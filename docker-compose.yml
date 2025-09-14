@@ -1,0 +1,9 @@
+services:
+  api:
+    image: my-api                 
+    build: .                    
+    environment:
+      - PORT=8081                  
+    ports:
+      - "8081:8081"                
+    restart: unless-stopped
